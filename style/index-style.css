@@ -1,0 +1,73 @@
+:root{
+  --light: #fff;
+  --dark: #333;
+  --shadow: 0 3px 5px(104,104,104,0.8);
+}
+body{
+  background-color: #02034d;
+}
+.wrapper{
+  display:grid;
+  grid-gap:20px;
+}
+.banner{
+  border-style: solid;
+  border-color: black;
+  height: 400px;
+  width: auto;
+  text-align: center;
+  background: URL(../img/room.gif);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner p{
+  font-size: 100px;
+  color: pink;
+}
+.nav-btns ul{
+  list-style:none;
+  margin-right: 30px;
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nav-btns a{
+  display: block;
+  /* background-color: var(--dark); */
+  height: 200px;
+  border-style:solid;
+  border-color: black;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  text-align:center;
+  font-family: cursive;
+  color: pink;
+  padding-top: 50px;
+  font-size: 40px;
+}
+#anime{
+  background: URL(../img/bebop.gif);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#pokemon{
+  background: URL(../img/poke.gif);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#games{
+  background: URL(../img/gemu.gif);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#splashy-paren{
+  font-size: 10px;
+}
+footer{
+  color: pink;
+  text-align: center;
+}

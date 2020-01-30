@@ -1,0 +1,69 @@
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+.banner{
+  border-color: black;
+  border-style: solid;
+  height:300px;
+  background: URL(../img/animebanner.jpg);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.home a{
+  text-decoration: none;
+  display:block;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  width: 50px;
+  margin-left: 50%;
+}
+.floaty-row-1{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+}
+#charizard{
+  border-color: black;
+  border-style: solid;
+  height:200px;
+}
+#pikachu{
+  border-color: black;
+  border-style: solid;
+  height:200px;
+}
+#lapras{
+  border-color: black;
+  border-style: solid;
+  height:200px;
+}
+.area{
+  display: grid;
+  grid-gap:20px;
+  grid-template-areas:
+  "a1 a2 a3"
+  "a1 a2 a4"
+}
+.a1{
+  grid-area: a1;
+  border-color: black;
+  border-style: solid;
+}
+.a2{
+  grid-area: a2;
+  border-color: black;
+  border-style: solid;
+}
+.a3{
+  grid-area: a3;
+  border-color: black;
+  border-style: solid;
+}
+.a4{
+  grid-area: a4;
+  border-color: black;
+  border-style: solid;
+}

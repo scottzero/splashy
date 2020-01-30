@@ -1,0 +1,95 @@
+:root{
+  --light: #fff;
+  --dark: #333;
+  --shadow: 0 1px 3px rgba(104.,104,104,0.8);
+}
+body{
+  background: yellow;
+}
+.wrapper{
+  display:grid;
+  grid-gap: 20px;
+}
+.banner{
+  border-style: solid;
+  border-color: black;
+  background: url(../../../img/charizard/charizard-banner.jpg);
+  background-position: center center;
+  height: 500px;
+}
+.navigation ul{
+  display:grid;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.navigation a{
+  display:block;
+  background: lightgrey;
+  box-shadow: var(--shadow);
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navigation a:hover{
+  background: orange;
+  color: purple;
+}
+.jap{
+  display:grid;
+}
+.lang p{
+  text-align: center;
+  font-size: 100px;
+}
+.row3{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+}
+.leftbox{
+  border-style: solid;
+  border-color: black;
+  height: 300px;
+  background: url(../../../img/charizard/char-articuno.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rightbox{
+  border-style: solid;
+  border-color: black;
+  height: 300px;
+  background:url(../../../img/charizard/char-mewtwo.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.area{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "a1 a2 a3"
+    "a1 a2 a4"
+}
+.a1{
+  grid-area: a1;
+  border-style: solid;
+  border-color: black;
+  height: 400px;
+}
+.a2{
+  grid-area: a2;
+  border-style: solid;
+  border-color: black;
+}
+.a3{
+  grid-area: a3;
+  border-style: solid;
+  border-color: black;
+}
+.a4{
+  grid-area: a4;
+  border-style: solid;
+  border-color: black;
+}

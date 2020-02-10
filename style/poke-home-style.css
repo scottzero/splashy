@@ -27,7 +27,10 @@
   border-color: black;
   border-style: solid;
   height:200px;
-  background: URL(../img/charizard/);
+  background: URL(../img/charizard/charchar1.gif);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #pikachu{
   border-color: black;
